@@ -80,11 +80,14 @@ Example contract repository
   3. User enters search data, and submits form.
   4. System list relevant courses
   5. User selects a course in List
+  6. System shows course details
 
 **Postcondition** (Success guaranties) A specific couse is selected
 
 **Alternative scenarios**
 **Alternative postconditions**
+
+![](materials/ssd.png)
 
 #### UC2
 ...
@@ -92,3 +95,5 @@ Example contract repository
 **Main Scenario**
   1. User selects course (UC1)
   2. ...
+
+### System Operations

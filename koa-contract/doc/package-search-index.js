@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"dk.cphbusiness.koa.contract"},{"l":"dk.cphbusiness.koa.contract.dto"}]

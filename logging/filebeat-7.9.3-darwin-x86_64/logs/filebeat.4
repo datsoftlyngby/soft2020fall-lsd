@@ -1,0 +1,42 @@
+2020-11-03T20:15:56.928+0100	INFO	instance/beat.go:640	Home path: [/Users/AKA/DatSoftLyngby/soft2020fall-lsd/logging/filebeat-7.9.3-darwin-x86_64] Config path: [/Users/AKA/DatSoftLyngby/soft2020fall-lsd/logging/filebeat-7.9.3-darwin-x86_64] Data path: [/Users/AKA/DatSoftLyngby/soft2020fall-lsd/logging/filebeat-7.9.3-darwin-x86_64/data] Logs path: [/Users/AKA/DatSoftLyngby/soft2020fall-lsd/logging/filebeat-7.9.3-darwin-x86_64/logs]
+2020-11-03T20:15:56.929+0100	INFO	instance/beat.go:648	Beat ID: c6b287f8-022f-43f9-bd58-392a04ab3600
+2020-11-03T20:15:56.958+0100	INFO	[beat]	instance/beat.go:976	Beat info	{"system_info": {"beat": {"path": {"config": "/Users/AKA/DatSoftLyngby/soft2020fall-lsd/logging/filebeat-7.9.3-darwin-x86_64", "data": "/Users/AKA/DatSoftLyngby/soft2020fall-lsd/logging/filebeat-7.9.3-darwin-x86_64/data", "home": "/Users/AKA/DatSoftLyngby/soft2020fall-lsd/logging/filebeat-7.9.3-darwin-x86_64", "logs": "/Users/AKA/DatSoftLyngby/soft2020fall-lsd/logging/filebeat-7.9.3-darwin-x86_64/logs"}, "type": "filebeat", "uuid": "c6b287f8-022f-43f9-bd58-392a04ab3600"}}}
+2020-11-03T20:15:56.958+0100	INFO	[beat]	instance/beat.go:985	Build info	{"system_info": {"build": {"commit": "7aab6a9659749802201db8020c4f04b74cec2169", "libbeat": "7.9.3", "time": "2020-10-16T09:16:15.000Z", "version": "7.9.3"}}}
+2020-11-03T20:15:56.958+0100	INFO	[beat]	instance/beat.go:988	Go runtime info	{"system_info": {"go": {"os":"darwin","arch":"amd64","max_procs":8,"version":"go1.14.7"}}}
+2020-11-03T20:15:56.959+0100	INFO	[beat]	instance/beat.go:992	Host info	{"system_info": {"host": {"architecture":"x86_64","boot_time":"2020-11-03T15:04:25.624094+01:00","name":"MacBook-Pro.local","ip":["127.0.0.1/8","::1/128","fe80::1/64","fe80::aede:48ff:fe00:1122/64","fe80::149d:2a4a:f3b5:8355/64","192.168.0.45/24","fe80::6c98:81ff:fef8:a2b8/64","fe80::6c98:81ff:fef8:a2b8/64","fe80::3d46:2ef:8b28:58e8/64","fe80::ee0d:7228:f707:63ce/64"],"kernel_version":"19.6.0","mac":["ac:de:48:00:11:22","fa:ff:c2:47:87:7d","f8:ff:c2:47:87:7d","0a:ff:c2:47:87:7d","6e:98:81:f8:a2:b8","6e:98:81:f8:a2:b8","82:44:62:a1:48:01","82:44:62:a1:48:00","82:44:62:a1:48:05","82:44:62:a1:48:04","82:44:62:a1:48:01"],"os":{"family":"darwin","platform":"darwin","name":"Mac OS X","version":"10.15.7","major":10,"minor":15,"patch":7,"build":"19H2"},"timezone":"CET","timezone_offset_sec":3600,"id":"0C595702-0325-54B6-9182-ECBE1AC5C0AC"}}}
+2020-11-03T20:15:56.959+0100	INFO	[beat]	instance/beat.go:1021	Process info	{"system_info": {"process": {"cwd": "/Users/AKA/DatSoftLyngby/soft2020fall-lsd/logging/filebeat-7.9.3-darwin-x86_64", "exe": "./filebeat", "name": "filebeat", "pid": 7250, "ppid": 6637, "start_time": "2020-11-03T20:15:56.865+0100"}}}
+2020-11-03T20:15:56.959+0100	INFO	instance/beat.go:299	Setup Beat: filebeat; Version: 7.9.3
+2020-11-03T20:15:56.959+0100	INFO	[index-management]	idxmgmt/std.go:184	Set output.elasticsearch.index to 'filebeat-7.9.3' as ILM is enabled.
+2020-11-03T20:15:56.959+0100	INFO	eslegclient/connection.go:99	elasticsearch url: http://localhost:9200
+2020-11-03T20:15:56.960+0100	INFO	[publisher]	pipeline/module.go:113	Beat name: MacBook-Pro.local
+2020-11-03T20:15:56.961+0100	INFO	eslegclient/connection.go:99	elasticsearch url: http://localhost:9200
+2020-11-03T20:15:57.007+0100	INFO	[esclientleg]	eslegclient/connection.go:314	Attempting to connect to Elasticsearch version 7.9.3
+2020-11-03T20:15:57.033+0100	INFO	[index-management]	idxmgmt/std.go:261	Auto ILM enable success.
+2020-11-03T20:15:57.178+0100	INFO	[index-management]	idxmgmt/std.go:274	ILM policy successfully loaded.
+2020-11-03T20:15:57.178+0100	INFO	[index-management]	idxmgmt/std.go:407	Set setup.template.name to '{filebeat-7.9.3 {now/d}-000001}' as ILM is enabled.
+2020-11-03T20:15:57.178+0100	INFO	[index-management]	idxmgmt/std.go:412	Set setup.template.pattern to 'filebeat-7.9.3-*' as ILM is enabled.
+2020-11-03T20:15:57.178+0100	INFO	[index-management]	idxmgmt/std.go:446	Set settings.index.lifecycle.rollover_alias in template to {filebeat-7.9.3 {now/d}-000001} as ILM is enabled.
+2020-11-03T20:15:57.178+0100	INFO	[index-management]	idxmgmt/std.go:450	Set settings.index.lifecycle.name in template to {filebeat {"policy":{"phases":{"hot":{"actions":{"rollover":{"max_age":"30d","max_size":"50gb"}}}}}}} as ILM is enabled.
+2020-11-03T20:15:57.189+0100	INFO	template/load.go:169	Existing template will be overwritten, as overwrite is enabled.
+2020-11-03T20:15:57.882+0100	INFO	template/load.go:109	Try loading template filebeat-7.9.3 to Elasticsearch
+2020-11-03T20:15:58.355+0100	INFO	template/load.go:101	template with name 'filebeat-7.9.3' loaded.
+2020-11-03T20:15:58.355+0100	INFO	[index-management]	idxmgmt/std.go:298	Loaded index template.
+2020-11-03T20:15:59.526+0100	INFO	[index-management]	idxmgmt/std.go:309	Write alias successfully generated.
+2020-11-03T20:15:59.526+0100	INFO	kibana/client.go:119	Kibana url: http://localhost:5601
+2020-11-03T20:15:59.930+0100	INFO	[add_cloud_metadata]	add_cloud_metadata/add_cloud_metadata.go:89	add_cloud_metadata: hosting provider type not detected.
+2020-11-03T20:16:00.591+0100	INFO	kibana/client.go:119	Kibana url: http://localhost:5601
+2020-11-03T20:17:09.546+0100	INFO	instance/beat.go:810	Kibana dashboards successfully loaded.
+2020-11-03T20:17:09.547+0100	WARN	[cfgwarn]	instance/beat.go:551	DEPRECATED: Setting up ML using Filebeat is going to be removed. Please use the ML app to setup jobs. Will be removed in version: 8.0.0
+2020-11-03T20:17:09.547+0100	INFO	eslegclient/connection.go:99	elasticsearch url: http://localhost:9200
+2020-11-03T20:17:09.556+0100	INFO	[esclientleg]	eslegclient/connection.go:314	Attempting to connect to Elasticsearch version 7.9.3
+2020-11-03T20:17:09.557+0100	INFO	kibana/client.go:119	Kibana url: http://localhost:5601
+2020-11-03T20:17:09.585+0100	WARN	fileset/modules.go:421	X-Pack Machine Learning is not enabled
+2020-11-03T20:17:09.605+0100	WARN	fileset/modules.go:421	X-Pack Machine Learning is not enabled
+2020-11-03T20:17:09.605+0100	INFO	eslegclient/connection.go:99	elasticsearch url: http://localhost:9200
+2020-11-03T20:17:09.611+0100	INFO	[esclientleg]	eslegclient/connection.go:314	Attempting to connect to Elasticsearch version 7.9.3
+2020-11-03T20:17:09.612+0100	INFO	eslegclient/connection.go:99	elasticsearch url: http://localhost:9200
+2020-11-03T20:17:09.617+0100	INFO	[esclientleg]	eslegclient/connection.go:314	Attempting to connect to Elasticsearch version 7.9.3
+2020-11-03T20:17:11.058+0100	INFO	fileset/pipelines.go:139	Elasticsearch pipeline with ID 'filebeat-7.9.3-system-auth-pipeline' loaded
+2020-11-03T20:17:11.398+0100	INFO	fileset/pipelines.go:139	Elasticsearch pipeline with ID 'filebeat-7.9.3-system-syslog-pipeline' loaded
+2020-11-03T20:17:11.398+0100	INFO	cfgfile/reload.go:262	Loading of config files completed.
+2020-11-03T20:17:11.398+0100	INFO	[load]	cfgfile/list.go:124	Stopping 1 runners ...
